@@ -1,26 +1,56 @@
-###################################
+Asagıda bulunan fonksyionlar kontrole göre instenilen durum ise sıfır olmayan bir değer, aksi takdirde 0 değerini geri döndürür.
+
+
+############################
 int isalnum(int c);
-
 Fonksiyona geçirilen c parametre değerinin alfabede bulunan bir harf ve bir rakam olup olmadığını kontrol eder.
-
-Eğer karakter alfabede yer alan bir harf veya bir rakam ise sıfır olmayan bir değer, aksi takdirde 0 değerini geri döndürür.
-###################################
-
-
+############################
 int isalpha(int c);
-
 Fonksiyona geçirilen c parametre değerinin alfabede bulunan bir harf olup olmadığını kontrol eder.
-
-Eğer karakter alfabede yer alan bir harf ise sıfır olmayan bir değer, aksi takdirde 0 değerini geri döndürür.
-
-###################################
-int isblank(int c)
+############################
+int isblank(int c); 
 Fonksiyona geçirilen c parametre değerinin boş bir değer (boşluk tuşu (20) ve tab tuşu(9)) olup olmadığını kontrol eder.
-###################################
+############################
 int iscntrl(int c);
-
 Fonksiyona geçirilen c parametre değerinin bir kontrol karakteri olup olmadığını kontrol eder.
-
-###################################
+############################
 int isdigit(int c);
+Fonksiyona geçirilen c parametre değerinin bir rakam olup olmadığını kontrol eder.
+############################
+int isgraph(int c);
+Fonksiyona geçirilen c parametre değerinin grafiksel gösteriminin olup olmadığını kontrol eder.
+Eğer bir karakter alfabede bulunan bir harf, bir rakam, bir noktalama işareti veya bir noktalama karakteri ise grafiksel bir gösterimi vardır.
+############################
+int islower(int c);
+Fonksiyona geçirilen c parametre değerinin küçük bir harf olup olmadığını kontrol eder.
+############################
+int isprint(int c);
+Fonksiyona geçirilen c parametre değerinin yazdırılabilir bir karakter olup olmadığını kontrol eder.
+Eğer bir karakter alfabede bulunan bir harf, bir rakam, bir noktalama işareti veya bir noktalama karakteri ise yazdırılabilir bir karakterdir.############################
+############################
+int ispunct(int c);
+Fonksiyona geçirilen c parametre değerinin bir noktalama karakteri olup olmadığını kontrol eder.
+############################
+int isspace(int c);
+Fonksiyona geçirilen c parametre değerinin bir beyaz boşluk karakteri olup olmadığını kontrol eder
+############################
+int isupper(int c);
+Fonksiyona geçirilen c parametre değerinin büyük bir harf olup olmadığını kontrol eder.
+############################
+int isxdigit(int c);
+Fonksiyona geçirilen c parametre değerinin onaltılık sayı sisteminde yer alan bir değer olup olmadığını kontrol eder.
+############################
+int tolower(int c);
+Fonksiyona geçirilen c parametre değerinde yer alan büyük harfi küçük harfe çevirir.
+############################
+int toupper(int c);
+Fonksiyona geçirilen c parametre değerinde yer alan küçük harfi büyük harfe çevirir.
+############################
+
+
+
+
+
+
+
 
