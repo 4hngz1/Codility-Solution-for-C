@@ -1,0 +1,26 @@
+###################################
+int isalnum(int c);
+
+Fonksiyona geçirilen c parametre değerinin alfabede bulunan bir harf ve bir rakam olup olmadığını kontrol eder.
+
+Eğer karakter alfabede yer alan bir harf veya bir rakam ise sıfır olmayan bir değer, aksi takdirde 0 değerini geri döndürür.
+###################################
+
+
+int isalpha(int c);
+
+Fonksiyona geçirilen c parametre değerinin alfabede bulunan bir harf olup olmadığını kontrol eder.
+
+Eğer karakter alfabede yer alan bir harf ise sıfır olmayan bir değer, aksi takdirde 0 değerini geri döndürür.
+
+###################################
+int isblank(int c)
+Fonksiyona geçirilen c parametre değerinin boş bir değer (boşluk tuşu (20) ve tab tuşu(9)) olup olmadığını kontrol eder.
+###################################
+int iscntrl(int c);
+
+Fonksiyona geçirilen c parametre değerinin bir kontrol karakteri olup olmadığını kontrol eder.
+
+###################################
+int isdigit(int c);
+
