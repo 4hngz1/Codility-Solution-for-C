@@ -1,7 +1,19 @@
+/*
+ ============================================================================
+ Name        : 03_functions.c
+ Author      : hakan
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int _max3_ (int number_1, int number_2, int number_3);
+double _max3_d (double number_1, double number_2, double number_3);
+
 
 int _max3_ (int number_1, int number_2, int number_3)
 {
@@ -11,13 +23,27 @@ int _max3_ (int number_1, int number_2, int number_3)
 }
 
 
+double _max3_d (double number_1, double number_2, double number_3)
+{
+
+	double maxVal = number_3 > number_2 ? number_3 : number_2;
+	return  number_1 > maxVal ? number_1 : maxVal;
+}
+
 int main(void) {
-	printf("Enter 3 Number:\n");
-	fflush(stdout);
-
 	int x, y, z;
+	double d1,d2,d3;
 
+	printf("Enter 3 Integer Number:\n");
+	fflush(stdout);
 	scanf("%d%d%d",&x,&y,&z);
 	printf("Max Val:%d\r\n",_max3_(x,y,z));
+
+	printf("Enter 3 Double Number:\n");
+	fflush(stdout);
+	scanf("%lf%lf%lf",&d1,&d2,&d3);
+	printf("Max Val:%lf\r\n",_max3_d(d1,d2,d3));
+
+
 	return EXIT_SUCCESS;
 }
